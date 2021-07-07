@@ -1,0 +1,16 @@
+.url-preview {
+  ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    list-style: none;
+    margin: 2rem;
+    padding: 0;
+    height: 15em;
+
+    > li {
+      margin: 0.5em;
+    }
+  }
+}

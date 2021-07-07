@@ -1,0 +1,263 @@
+@font-face {
+  font-family: 'g1-icons';
+  src: url('../fonts/g1-icons.eot?xe4h8o');
+  src: url('../fonts/g1-icons.eot?xe4h8o#iefix') format('embedded-opentype'),
+    url('../fonts/g1-icons.woff2?xe4h8o') format('woff2'),
+    url('../fonts/g1-icons.ttf?xe4h8o') format('truetype'),
+    url('../fonts/g1-icons.woff?xe4h8o') format('woff'),
+    url('../fonts/g1-icons.svg?xe4h8o#g1-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'g1-icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add:before {
+  content: '\e94c';
+}
+.icon-video-game-logo-steam:before {
+  content: '\e94d';
+}
+.icon-single-neutral-id-card-1:before {
+  content: '\e94b';
+}
+.icon-single-neutral-actions:before {
+  content: '\e94a';
+}
+.icon-video-game-controller-team:before {
+  content: '\e943';
+}
+.icon-antenna:before {
+  content: '\e944';
+}
+.icon-video-game-tetris:before {
+  content: '\e945';
+}
+.icon-video-game-sword:before {
+  content: '\e946';
+}
+.icon-video-game-mario-mushroom-1:before {
+  content: '\e947';
+}
+.icon-quill-write:before {
+  content: '\e948';
+}
+.icon-video-game-mario-flower-1:before {
+  content: '\e949';
+}
+.icon-check-1:before {
+  content: '\e942';
+}
+.icon-monetization-sponsor:before {
+  content: '\e941';
+}
+.icon-check-circle-1:before {
+  content: '\e940';
+}
+.icon-expand-3:before {
+  content: '\e93f';
+}
+.icon-hash:before {
+  content: '\e93e';
+}
+.icon-newspaper-fold:before {
+  content: '\e93b';
+}
+.icon-satellite:before {
+  content: '\e93c';
+}
+.icon-search:before {
+  content: '\e93d';
+}
+.icon-video-games-discord:before {
+  content: '\e939';
+}
+.icon-professional-network-linkedin:before {
+  content: '\e93a';
+}
+.icon-pin:before {
+  content: '\e938';
+}
+.icon-award-trophy-star:before {
+  content: '\e900';
+}
+.icon-keyboard:before {
+  content: '\e901';
+}
+.icon-award-medal:before {
+  content: '\e902';
+}
+.icon-video-game-pacman:before {
+  content: '\e903';
+}
+.icon-user-network:before {
+  content: '\e904';
+}
+.icon-remove-circle:before {
+  content: '\e905';
+}
+.icon-image-file-edit:before {
+  content: '\e906';
+}
+.icon-arrow-double-left:before {
+  content: '\e907';
+}
+.icon-arrow-double-right:before {
+  content: '\e908';
+}
+.icon-video-game-controller:before {
+  content: '\e909';
+}
+.icon-tv-flat-screen:before {
+  content: '\e90a';
+}
+.icon-social-instagram:before {
+  content: '\e90b';
+}
+.icon-social-video-youtube-clip:before {
+  content: '\e90c';
+}
+.icon-video-game-logo-twitch:before {
+  content: '\e90d';
+}
+.icon-feed-sina-weibo:before {
+  content: '\e90e';
+}
+.icon-social-media-facebook:before {
+  content: '\e90f';
+}
+.icon-social-media-reddit:before {
+  content: '\e910';
+}
+.icon-social-media-snapchat:before {
+  content: '\e911';
+}
+.icon-social-media-twitter:before {
+  content: '\e912';
+}
+.icon-social-media-vk:before {
+  content: '\e913';
+}
+.icon-arrow-left-1:before {
+  content: '\e914';
+}
+.icon-arrow-left:before {
+  content: '\e915';
+}
+.icon-arrow-right-1:before {
+  content: '\e916';
+}
+.icon-arrow-right:before {
+  content: '\e917';
+}
+.icon-arrow-up-1:before {
+  content: '\e918';
+}
+.icon-arrow-up:before {
+  content: '\e919';
+}
+.icon-arrow-down-1:before {
+  content: '\e91a';
+}
+.icon-arrow-down:before {
+  content: '\e91b';
+}
+.icon-navigation-menu-vertical:before {
+  content: '\e91c';
+}
+.icon-navigation-menu-horizontal:before {
+  content: '\e91d';
+}
+.icon-cog:before {
+  content: '\e91e';
+}
+.icon-information-circle:before {
+  content: '\e91f';
+}
+.icon-alert-circle:before {
+  content: '\e920';
+}
+.icon-alarm-bell:before {
+  content: '\e921';
+}
+.icon-calendar:before {
+  content: '\e922';
+}
+.icon-pencil:before {
+  content: '\e923';
+}
+.icon-pencil-write-2:before {
+  content: '\e924';
+}
+.icon-bin:before {
+  content: '\e925';
+}
+.icon-attachment:before {
+  content: '\e926';
+}
+.icon-hyperlink:before {
+  content: '\e927';
+}
+.icon-share:before {
+  content: '\e928';
+}
+.icon-messages-bubble-square:before {
+  content: '\e929';
+}
+.icon-single-neutral-actions-subtract:before {
+  content: '\e92a';
+}
+.icon-single-neutral-actions-subtract1:before {
+  content: '\e92b';
+}
+.icon-arrow-thick-up:before {
+  content: '\e92c';
+}
+.icon-arrow-thick-down:before {
+  content: '\e92d';
+}
+.icon-image-file-add:before {
+  content: '\e92e';
+}
+.icon-network-arrow:before {
+  content: '\e92f';
+}
+.icon-view-off:before {
+  content: '\e930';
+}
+.icon-view-1:before {
+  content: '\e931';
+}
+.icon-multiple-users-1:before {
+  content: '\e932';
+}
+.icon-multiple-users-11:before {
+  content: '\e933';
+}
+.icon-multiple-users-network:before {
+  content: '\e934';
+}
+.icon-messages-bubble-square-disable:before {
+  content: '\e935';
+}
+.icon-remove:before {
+  content: '\e936';
+}
+.icon-email-action-reply:before {
+  content: '\e937';
+}

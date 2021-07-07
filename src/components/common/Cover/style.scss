@@ -1,0 +1,52 @@
+@import '../../../styles/varsandmixins';
+
+.cover {
+  position: relative;
+  background: var(--bg-color);
+  background-image: url('https://cdn.g1.gg/2880/assets/placeholder/cover-image-light.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vw;
+  margin-bottom: calc(-50vw + 10rem);
+
+  @include tabletAndUp {
+    height: 35vw;
+    margin-bottom: calc(-35vw + 10rem);
+  }
+  @include wideDesktopAndUp {
+    height: 25vw;
+    margin-bottom: calc(-25vw + 10rem);
+  }
+  @include darkMode {
+    background-image: url('https://cdn.g1.gg/2880/assets/placeholder/cover-image-dark.jpg');
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--bg-color);
+    opacity: 0.3;
+
+    @include darkMode {
+      display: none;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10rem;
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(var(--bg-color-rgb), 0),
+      rgba(var(--bg-color-rgb), 1)
+    );
+  }
+}

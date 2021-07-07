@@ -1,0 +1,45 @@
+@import '../style.scss';
+
+// custom
+.grid {
+  .card {
+    &--achievements-full {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.achievement-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 10rem;
+  max-height: 11rem;
+  margin-bottom: 2rem;
+
+  .achievement-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.75rem;
+
+    .badge-name {
+      font-weight: 700;
+
+      &--post {
+        color: $achievement-action-post-color;
+      }
+      &--follower {
+        color: $achievement-action-follower-color;
+      }
+      &--gear {
+        color: $achievement-action-gear-color;
+      }
+    }
+
+    .badge-date {
+      font-size: 90%;
+      margin-top: 0.25rem;
+    }
+  }
+}

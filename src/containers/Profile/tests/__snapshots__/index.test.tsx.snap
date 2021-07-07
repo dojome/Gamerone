@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`page render shows user is not found 1`] = `
+<DocumentFragment>
+  <div
+    class=""
+  >
+    <div
+      class="alert"
+    >
+      <h1>
+        vadim is not found
+      </h1>
+    </div>
+  </div>
+</DocumentFragment>
+`;

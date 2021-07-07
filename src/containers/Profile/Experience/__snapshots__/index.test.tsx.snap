@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fetch experiences data from API 1`] = `
+<DocumentFragment>
+  <div
+    class="grid grid__profile"
+  >
+    <div
+      class="grid__spacer-2"
+    />
+    <div
+      class="card card--experience"
+    >
+      <div
+        class="card__content"
+      >
+        <img
+          alt="image"
+          height="128"
+          src="CDN_ENV_NOT_DEFINED/128x128no"
+          title="image"
+          width="128"
+        />
+        experience title 1
+      </div>
+    </div>
+    <div
+      class="card card--experience"
+    >
+      <div
+        class="card__content"
+      >
+        <img
+          alt="image"
+          height="128"
+          src="CDN_ENV_NOT_DEFINED/128x128no"
+          title="image"
+          width="128"
+        />
+        experience title 1
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

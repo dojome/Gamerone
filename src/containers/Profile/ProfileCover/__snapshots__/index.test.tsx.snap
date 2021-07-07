@@ -1,0 +1,222 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`header elements renders username, fullname and avatar 1`] = `
+<DocumentFragment>
+  <main
+    class="container"
+    role="main"
+  >
+    <div
+      style="height: 220px; background-image: url(); background-size: cover; background-position: center; background-repeat: no-repeat;"
+    >
+      <div>
+        <div
+          class="d-flex"
+        />
+      </div>
+    </div>
+  </main>
+</DocumentFragment>
+`;
+
+exports[`header elements should show default placeholder when avatar is empty 1`] = `
+<DocumentFragment>
+  <main
+    class="container"
+    role="main"
+  >
+    <div
+      style="height: 220px; background-image: url(); background-size: cover; background-position: center; background-repeat: no-repeat;"
+    >
+      <div>
+        <div
+          class="d-flex"
+        />
+      </div>
+    </div>
+  </main>
+</DocumentFragment>
+`;
+
+exports[`header elements shows club text after username when profile is club 1`] = `
+<DocumentFragment>
+  <main
+    class="container"
+    role="main"
+  >
+    <div
+      style="height: 220px; background-image: url(); background-size: cover; background-position: center; background-repeat: no-repeat;"
+    >
+      <div>
+        <div
+          class="d-flex"
+        />
+      </div>
+    </div>
+  </main>
+</DocumentFragment>
+`;
+
+exports[`header render on Profile and Home page shows username on home page when authenticated 1`] = `
+<DocumentFragment>
+  <div
+    class="col-md-12"
+  >
+    <div
+      class="card mb-2"
+      style="height: 220px; background-image: url(); background-size: cover; background-position: center; background-repeat: no-repeat;"
+    >
+      <div
+        class="card-body"
+      >
+        <div
+          class="d-flex"
+        >
+          <div
+            class="d-flex justify-content-center col-md-3 align-items-center"
+            style="margin-top: 120px; padding-left: 0px; margin-left: -15px;"
+          >
+            <img
+              alt="vadim"
+              class="avatar xl border border-body border-width-5"
+              id="avatar"
+              src="https://cdn.g1.gg/128/profile/vadim.svg"
+            />
+          </div>
+          <div
+            class="d-flex flex-column flex-fill align-self-center mt-4"
+          >
+            <h3
+              aria-label="username"
+            >
+              vadim 
+            </h3>
+            <div
+              aria-label="fullname"
+            >
+              frontend dev
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="d-flex flex-fill justify-content-end"
+    style="height: 80px; padding-left: 15px; padding-right: 15px;"
+  >
+    <div
+      class="mr-2"
+      style="width: 150px;"
+    >
+      Monster Energy
+    </div>
+    <div
+      class="mr-2"
+      style="width: 150px;"
+    >
+      SAP
+    </div>
+    <div
+      class="mr-2"
+      style="width: 150px;"
+    >
+      Honda
+    </div>
+    <div
+      class="mr-2"
+      style="width: 150px;"
+    >
+      Twitch
+    </div>
+    <div
+      class="mr-2"
+      style="width: 150px;"
+    >
+      Hyper X
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`header render on Profile and Home page shows username on profile page 1`] = `
+<DocumentFragment>
+  <div
+    class="col-md-12"
+  >
+    <div
+      class="card mb-2"
+      style="height: 220px; background-image: url(); background-size: cover; background-position: center; background-repeat: no-repeat;"
+    >
+      <div
+        class="card-body"
+      >
+        <div
+          class="d-flex"
+        >
+          <div
+            class="d-flex justify-content-center col-md-3 align-items-center"
+            style="margin-top: 120px; padding-left: 0px; margin-left: -15px;"
+          >
+            <img
+              alt="username"
+              class="avatar xl border border-body border-width-5"
+              id="avatar"
+              src="https://cdn.g1.gg/128/assets/placeholder/avatar.svg"
+            />
+          </div>
+          <div
+            class="d-flex flex-column flex-fill align-self-center mt-4"
+          >
+            <h3
+              aria-label="username"
+            >
+               
+            </h3>
+            <div
+              aria-label="fullname"
+            >
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="d-flex flex-fill justify-content-end"
+    style="height: 80px; padding-left: 15px; padding-right: 15px;"
+  >
+    <div
+      class="mr-2"
+      style="width: 150px;"
+    >
+      Monster Energy
+    </div>
+    <div
+      class="mr-2"
+      style="width: 150px;"
+    >
+      SAP
+    </div>
+    <div
+      class="mr-2"
+      style="width: 150px;"
+    >
+      Honda
+    </div>
+    <div
+      class="mr-2"
+      style="width: 150px;"
+    >
+      Twitch
+    </div>
+    <div
+      class="mr-2"
+      style="width: 150px;"
+    >
+      Hyper X
+    </div>
+  </div>
+</DocumentFragment>
+`;

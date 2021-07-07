@@ -1,0 +1,123 @@
+@import-normalize;
+@import './reset.scss';
+@import 'varsandmixins';
+@import './color-scheme.scss';
+@import url(https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap);
+
+//custom
+.pointer {
+  cursor: pointer;
+}
+
+// App-wide general styling
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Overpass';
+
+  font-size: 100%; // = 16px
+
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-moz-selection {
+  background-color: var(--theme-color);
+  color: $white;
+}
+::selection {
+  background-color: var(--theme-color);
+  color: $white;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  &.p--large {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  &.p--huge {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+hr {
+  border: none;
+  @include separator;
+}
+
+.content--2-col {
+  display: grid;
+  align-items: center;
+  grid-gap: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  @include tabletAndUp {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .input-wrapper {
+    margin-bottom: 0;
+  }
+}
+
+section {
+  padding: 0 1.25rem;
+}
+
+.section {
+  padding: 6rem 1.25rem;
+}
+.section--login {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-size: cover;
+  background-position: center;
+  background-scroll: fixed;
+  background-image: url('https://cdn.g1.gg/0x0/assets/images/login-background-light.png');
+
+  @include darkMode {
+    background-image: url('https://cdn.g1.gg/0x0/assets/images/login-background-dark.png');
+  }
+}
+
+// Icon size definitions
+
+.icon-1x {
+  font-size: 1rem;
+}
+.icon-125x {
+  font-size: 1.25rem;
+}
+.icon-15x {
+  font-size: 1.5rem;
+}
+.icon-2x {
+  font-size: 2rem;
+}
+.icon-3x {
+  font-size: 3rem;
+}

@@ -1,0 +1,8 @@
+@import '../../../styles/varsandmixins';
+
+// custom
+.grid {
+  .experience {
+    grid-column: auto / span 3;
+  }
+}

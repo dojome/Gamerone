@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fetch achievements data from API 1`] = `
+<DocumentFragment>
+  <div
+    class="grid grid__profile"
+  >
+    <div
+      class="grid__spacer-2"
+    />
+    <div
+      class="card card--achievements"
+    >
+      <div
+        class="card__content"
+      >
+        <img
+          alt="bir"
+          height="128"
+          src="CDN_ENV_NOT_DEFINED/128x128badges/placeholder.svg"
+          title="bir"
+          width="128"
+        />
+        bircds
+      </div>
+    </div>
+    <div
+      class="card card--achievements"
+    >
+      <div
+        class="card__content"
+      >
+        <img
+          alt="iki"
+          height="128"
+          src="CDN_ENV_NOT_DEFINED/128x128badges/placeholder.svg"
+          title="iki"
+          width="128"
+        />
+        ikifgergfwegwergewrgwe
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

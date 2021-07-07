@@ -1,0 +1,90 @@
+@import '../../../styles/varsandmixins';
+
+// custom
+.toast-message {
+  &--inline {
+    margin-bottom: 1.5rem;
+  }
+}
+
+// mock-ui
+
+.toast-messages {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 13;
+  width: 100%;
+  pointer-events: none;
+
+  @include tabletAndUp {
+    bottom: auto;
+    top: 5.5rem;
+    right: 0;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @include tabletAndDown {
+      padding: 0;
+    }
+  }
+}
+
+.toast-message {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0.5rem;
+  background: rgba(white, 0.8);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: translateX(5rem);
+  opacity: 0;
+  pointer-events: none;
+
+  @include darkMode {
+    background: rgba(var(--bg-color-darkest-rgb), 0.8);
+  }
+
+  @include tabletAndUp {
+    display: inline-flex;
+    width: auto;
+    margin-top: 0.5rem;
+    border-radius: 1.25rem;
+  }
+
+  &.is-active {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &__icon {
+    padding: 0 0.75rem;
+    color: var(--theme-color);
+  }
+
+  &--inline {
+    display: flex;
+    opacity: 1;
+    pointer-events: all;
+    transform: translateX(0);
+
+    .close {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+  .text {
+    flex: 1;
+  }
+
+  .button {
+    margin-left: 1rem;
+  }
+}

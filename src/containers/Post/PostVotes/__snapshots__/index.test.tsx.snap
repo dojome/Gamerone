@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correct number counts 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      aria-label="up-vote"
+      class="button button--"
+    >
+      <span
+        style="margin-right: 10px;"
+      >
+        Up
+      </span>
+      <span
+        class="badge badge-light"
+        id="up-vote-count"
+      >
+        5
+      </span>
+    </button>
+    <button
+      aria-label="down-vote"
+      class="button button--"
+    >
+      <span
+        style="margin-right: 10px;"
+      >
+        Down
+      </span>
+      <span
+        class="badge badge-light"
+        id="down-vote-count"
+      >
+        3
+      </span>
+    </button>
+    <button
+      class="button button--"
+    >
+      Comments 
+      <span
+        class="badge badge-light"
+        id="comment-count"
+      >
+        0
+      </span>
+    </button>
+  </div>
+</DocumentFragment>
+`;

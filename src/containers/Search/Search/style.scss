@@ -1,0 +1,211 @@
+@import '../../../styles/varsandmixins';
+
+.search {
+  position: relative;
+  flex: 1;
+
+  &-bar {
+    position: relative;
+    z-index: 3;
+    display: flex;
+  }
+  .search-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.125rem;
+    background: rgba($white, 0.3);
+    border-bottom-left-radius: 1.25rem;
+    border-top-left-radius: 1.25rem;
+    color: var(--theme-color);
+
+    &:hover {
+      background: rgba($white, 0.5);
+    }
+    &:active {
+      background: $white;
+
+      #logo {
+        transform: translateY(2px) scale(0.95);
+      }
+    }
+
+    @include darkMode {
+      background: rgba(var(--bg-color-darker-rgb), 0.3);
+      color: var(--theme-alt-color);
+
+      &:hover {
+        background: rgba(var(--bg-color-darker-rgb), 0.5);
+      }
+      &:active {
+        background: var(--bg-color-darker);
+      }
+    }
+
+    svg {
+      width: 24px; // 1.5rem;
+      transition: transform 0.2s ease-in-out;
+    }
+    #logo {
+      transform: translateY(2px);
+    }
+  }
+
+  &-input {
+    -webkit-appearance: none;
+    appearance: none;
+    min-width: 10rem;
+    padding-left: 1rem;
+    border: none;
+    background: rgba($white, 0.3);
+    border-bottom-right-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    font-size: 1.125rem;
+    color: var(--text-color);
+    transition: min-width 0.3s ease-in-out;
+
+    @include darkMode {
+      background: rgba(var(--bg-color-darker-rgb), 0.3);
+
+      &:focus {
+        background: rgba(var(--bg-color-darker-rgb), 0.5);
+      }
+    }
+
+    @include tabletAndDown {
+      flex: 1;
+    }
+
+    &:focus,
+    .search.is-open & {
+      outline: none;
+      background: rgba($white, 0.5);
+
+      @include darkMode {
+        background: rgba(var(--bg-color-darker-rgb), 0.3);
+      }
+      @include tabletAndUp {
+        min-width: 20rem;
+      }
+    }
+
+    &::-webkit-input-placeholder {
+      color: rgba(var(--text-color-bg), 0.4);
+    }
+    &:-moz-placeholder {
+      color: rgba(var(--text-color-bg), 0.4);
+    }
+    &::-moz-placeholder {
+      color: rgba(var(--text-color-bg), 0.4);
+    }
+    &:-ms-input-placeholder {
+      color: rgba(var(--text-color-bg), 0.4);
+    }
+    &::placeholder {
+      color: rgba(var(--text-color-bg), 0.4);
+    }
+  }
+
+  // Close buttons
+  &-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.125rem;
+    height: 2.125rem;
+    padding: 0.25rem;
+    border-radius: 0.75rem;
+    transform: translateY(-1px);
+
+    &:hover {
+      background-color: var(--bg-color-dark);
+      color: var(--theme-color);
+      cursor: pointer;
+    }
+  }
+
+  // Search result
+  &-result {
+    position: absolute;
+    top: -0.5rem;
+    left: -0.5rem;
+    z-index: 2;
+    width: calc(100% + 1rem);
+    height: auto;
+    max-height: calc(100% + 1rem);
+    padding: 3.5rem 0.5rem 0.5rem;
+    background: var(--bg-color-dark);
+    box-shadow: 1rem 1rem 1.5rem rgba(var(--text-color-rgb), 0.1);
+    border-radius: 1.5rem;
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out, max-height 1s ease-in-out;
+
+    @include darkMode {
+      box-shadow: 1rem 1rem 1.5rem rgba($black, 0.25);
+    }
+
+    .search.is-open & {
+      max-height: calc(100vh - 2rem);
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    &.has-results {
+      padding-top: 4rem;
+    }
+
+    .loading-message {
+      font-size: 0.875rem;
+      padding: 0.5rem 0.5rem 0.5rem 4rem;
+      opacity: 0.3;
+    }
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-height: 2.5rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: 1rem;
+      overflow: hidden;
+
+      &:hover {
+        background-color: rgba(var(--bg-color-darker-rgb), 0.75);
+        color: var(--text-color);
+        cursor: pointer;
+
+        @include darkMode {
+          color: $white;
+        }
+      }
+
+      &.is-hidden {
+        max-height: 0;
+        padding: 0;
+        opacity: 0;
+      }
+
+      .at {
+        opacity: 0.3;
+      }
+      .title {
+        margin-right: auto;
+        margin-left: 1.5rem;
+        font-size: 1rem;
+      }
+      .descr {
+        margin-right: 1rem;
+        font-size: 0.75rem;
+        opacity: 0.3;
+      }
+    }
+  }
+}

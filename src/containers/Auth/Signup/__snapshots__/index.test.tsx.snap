@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`creates a new user and saves token inside localStorage 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="col-lg-6 col-md-8 form-box"
+      >
+        <div
+          class="col-md-12 form-key"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-key"
+          />
+        </div>
+        <div
+          class="col-md-12 form-title"
+        >
+          Sign Up
+        </div>
+        <div
+          class="col-md-12 form-body"
+        >
+          <form>
+            <div
+              class="form-group"
+            >
+              <label
+                class="form-control-label"
+                for="firstName"
+              >
+                First Name
+              </label>
+              <input
+                aria-label="firstName"
+                class="form-control"
+                name="firstName"
+                type="text"
+              />
+            </div>
+            <div
+              class="form-group"
+            >
+              <label
+                class="form-control-label"
+                for="lastName"
+              >
+                Last Name
+              </label>
+              <input
+                aria-label="lastName"
+                class="form-control"
+                name="lastName"
+                type="text"
+              />
+            </div>
+            <div
+              class="form-group"
+            >
+              <label
+                class="form-control-label"
+                for="email"
+              >
+                Email
+              </label>
+              <input
+                aria-label="email"
+                class="form-control"
+                name="email"
+                type="text"
+              />
+            </div>
+            <div
+              class="form-group"
+            >
+              <label
+                class="form-control-label"
+                for="username"
+              >
+                Username
+              </label>
+              <input
+                aria-label="username"
+                class="form-control"
+                name="username"
+                type="text"
+              />
+            </div>
+            <div
+              class="form-group"
+            >
+              <label
+                class="form-control-label"
+                for="password"
+              >
+                Password
+              </label>
+              <input
+                aria-label="password"
+                class="form-control"
+                name="password"
+                type="password"
+              />
+            </div>
+            <div
+              class="col-lg-12 formbttm"
+            >
+              <div
+                class="form-button"
+              >
+                <button
+                  class="btn btn-primary"
+                  disabled=""
+                  type="submit"
+                >
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div
+          class="col-md-12 form-footer"
+        >
+          <span />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

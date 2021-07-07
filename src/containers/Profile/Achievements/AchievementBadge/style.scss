@@ -1,0 +1,14 @@
+@import '../style.scss';
+
+// custom
+.achievement-badge {
+  &--post {
+    color: $achievement-action-post-color;
+  }
+  &--follower {
+    color: $achievement-action-follower-color;
+  }
+  &--gear {
+    color: $achievement-action-gear-color;
+  }
+}

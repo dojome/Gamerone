@@ -1,0 +1,60 @@
+.react-grid-layout {
+  //   position: relative;
+  margin: -31.5rem auto 0rem auto;
+  max-width: 88rem;
+
+  .react-grid-item {
+    display: flex;
+
+    .card {
+      flex-grow: 1;
+      max-width: initial; // overwrite .card defaults
+      margin: 0; // overwrite .card defaults
+    }
+  }
+
+  //   .grid-card {
+  //     display: flex;
+  //     .card {
+  //       align-items: stretch;
+  //       width: 100%;
+  //       max-width: none; // overwrite .card defaults
+  //       margin: 0; // overwrite .card defaults
+  //     }
+  //   }
+
+  //   .react-grid-item > .react-resizable-handle {
+  //     position: absolute;
+  //     width: 20px;
+  //     height: 20px;
+  //     bottom: auto;
+  //     top: 45%;
+  //     right: 0;
+  //     cursor: ew-resize;
+  //   }
+
+  //   .react-resizable-handle {
+  //     background: none;
+  //     box-sizing: auto;
+  //     &:before,
+  //     &:after {
+  //       content: '';
+  //       display: inline-block;
+  //       height: 2rem;
+  //       width: 2px;
+  //       border-radius: 1px;
+  //       background: var(--text-color);
+  //       opacity: 0.25;
+  //       right: 10px;
+  //       bottom: auto;
+  //       border: none;
+  //     }
+  //     &:before {
+  //       margin-right: 0.25rem;
+  //     }
+  //     &:hover:before,
+  //     &:hover:after {
+  //       opacity: 0.5;
+  //     }
+  //   }
+}

@@ -1,0 +1,41 @@
+@import '../../../styles/varsandmixins';
+
+.grid {
+  .grid-spacer {
+    &--1 {
+      @include tabletAndUp {
+        grid-column: auto / span 1;
+      }
+    }
+    &--2 {
+      @include tabletAndUp {
+        grid-column: auto / span 2;
+      }
+    }
+    &--3 {
+      @include tabletAndUp {
+        grid-column: auto / span 3;
+      }
+    }
+    &--4 {
+      @include tabletAndUp {
+        grid-column: auto / span 4;
+      }
+    }
+    &--5 {
+      @include tabletAndUp {
+        grid-column: auto / span 5;
+      }
+    }
+
+    &--1,
+    &--2,
+    &--3,
+    &--4,
+    &--5 {
+      .card {
+        justify-content: flex-start;
+      }
+    }
+  }
+}

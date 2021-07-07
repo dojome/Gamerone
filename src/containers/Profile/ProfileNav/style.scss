@@ -1,0 +1,54 @@
+@import '../../../styles/varsandmixins';
+
+// custom
+.profile-nav {
+  z-index: 2;
+}
+
+// mock-ui
+.cover-spacer {
+  display: flex;
+  // justify-content: flex-start;
+  align-items: flex-end;
+}
+.profile-nav {
+  position: relative;
+  list-style: none;
+  display: flex;
+  padding: 0.75rem;
+  border-radius: 1.5rem;
+  background: rgba(var(--bg-color-darkest-rgb), 0.4);
+  font-size: 1.125rem;
+  overflow: auto;
+  max-width: 100%;
+
+  @include tabletAndUp {
+    overflow-x: auto;
+  }
+
+  li {
+    flex: 1;
+  }
+
+  li a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.875rem;
+    text-align: center;
+    opacity: 0.7;
+
+    &:hover:not(.is-active) {
+      background: rgba(var(--bg-color-darkest-rgb), 0.5);
+      opacity: 1;
+    }
+
+    &.is-active {
+      background: var(--bg-color);
+      @include shadowSmall;
+      opacity: 1;
+    }
+  }
+  li + li a {
+    margin-left: 0.75rem;
+  }
+}

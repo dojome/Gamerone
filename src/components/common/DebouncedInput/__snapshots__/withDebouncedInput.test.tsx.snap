@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`debouces input as expected 1`] = `
+<DocumentFragment>
+  <input
+    aria-label="debounce-input"
+    id="debounce-input"
+    name="debounce"
+    type="text"
+  />
+</DocumentFragment>
+`;

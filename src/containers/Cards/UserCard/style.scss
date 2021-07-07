@@ -1,0 +1,13 @@
+@import '../../../styles/varsandmixins';
+
+// custom
+.card {
+  &--user {
+    z-index: 1; // required on overview to sit on top of react-grid
+
+    .status-wrapper {
+      min-height: 88px;
+      max-height: 88px;
+    }
+  }
+}

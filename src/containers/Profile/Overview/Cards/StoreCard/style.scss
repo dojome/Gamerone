@@ -1,0 +1,27 @@
+@import '../../../../../styles/varsandmixins';
+
+// custom
+.card {
+  &--store {
+    overflow: hidden;
+    .card__content {
+      display: flex;
+      flex: 1;
+      padding: 0;
+    }
+    .product-name {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: -7rem;
+      height: 5rem;
+      background: rgba(var(--bg-color-lightest-rgb), 0.7);
+
+      @include darkMode {
+        background: rgba(var(--bg-color-darkest-rgb), 0.7);
+      }
+    }
+  }
+}

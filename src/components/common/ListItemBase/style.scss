@@ -1,0 +1,84 @@
+@import '../../../styles/varsandmixins';
+
+.list-item {
+  position: relative;
+  display: flex;
+  width: calc(100% + 1rem);
+  margin: 0 -0.5rem;
+  padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+  border-radius: 1.5rem;
+
+  &--clickable {
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(var(--bg-color-dark-rgb), 0.75);
+    }
+    &:active {
+      background-color: var(--bg-color-dark);
+      box-shadow: none;
+    }
+  }
+
+  & + .list-item {
+    margin-top: 0.5rem;
+  }
+
+  &.has-append-right {
+    padding-right: 4rem;
+  }
+  &__append-right {
+    position: absolute;
+    top: 0;
+    right: 0.75rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    margin-left: 1rem;
+    color: var(--text-color);
+  }
+
+  p {
+    opacity: 0.3;
+
+    @include tabletAndDown {
+      font-size: 0.875rem;
+    }
+  }
+
+  &__drag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.875rem;
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      display: inline-block;
+      height: 2px;
+      width: 1rem;
+      border-radius: 1px;
+      background: var(--text-color);
+      opacity: 0.25;
+    }
+    &:before {
+      margin-bottom: 0.25rem;
+    }
+    &:hover:before,
+    &:hover:after {
+      opacity: 0.5;
+    }
+  }
+}

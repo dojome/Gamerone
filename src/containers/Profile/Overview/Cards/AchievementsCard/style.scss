@@ -1,0 +1,8 @@
+// custom
+.card {
+  &--achievements {
+    .card__content {
+      margin-top: -1rem;
+    }
+  }
+}

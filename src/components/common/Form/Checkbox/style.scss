@@ -1,0 +1,121 @@
+@import '../../../../styles/varsandmixins';
+
+.checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.25rem 0.25rem 1rem;
+  line-height: 1rem;
+  background: var(--bg-color-dark);
+  border: 2px solid transparent;
+  border-radius: 1.5rem;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--bg-color-darker);
+  }
+  &:active {
+    background: var(--bg-color-darkest);
+  }
+
+  &.is-error {
+    border-color: $error;
+  }
+
+  &.is-disabled {
+    color: rgba($theme-bg, 0.4);
+    cursor: not-allowed;
+    opacity: 0.5;
+    box-shadow: none;
+
+    @include darkMode {
+      color: rgba($white, 0.4);
+    }
+  }
+  [type='checkbox'] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  & > .icon {
+    margin-right: 0.75rem;
+    opacity: 0.5;
+  }
+
+  $toggle-color: rgba(var(--bg-color-darkest-rgb), 0.8);
+
+  .toggle {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    min-width: 5rem;
+    padding: 0.25rem;
+    border: 2px solid $toggle-color;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &__box {
+      position: absolute;
+      top: 0.25rem;
+      left: 0.25rem;
+      width: 2rem;
+      min-width: 2rem;
+      height: 2rem;
+      background-color: var(--bg-color);
+      background-image: linear-gradient(
+        135deg,
+        rgba($white, 0.1),
+        rgba($white, 0)
+      );
+      border: 2px solid var(--bg-color);
+      border-radius: 0.875rem;
+      transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      @include shadowTiny;
+
+      @include darkMode {
+        background-image: linear-gradient(
+          135deg,
+          rgba($white, 0.02),
+          rgba($white, 0)
+        );
+      }
+    }
+    .icon {
+      position: relative;
+      display: inline-block;
+      width: 2rem;
+      min-width: 2rem;
+      height: 2rem;
+      text-align: center;
+      line-height: 2rem;
+      transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+      & + .icon {
+        margin-left: 0.25rem;
+      }
+    }
+  }
+  [type='checkbox']:checked ~ .toggle {
+    background: $toggle-color;
+  }
+  [type='checkbox']:checked ~ .toggle .toggle__box {
+    left: 2.5rem;
+  }
+  [type='checkbox'] ~ .toggle .checked {
+    opacity: 0.3;
+  }
+  [type='checkbox']:checked ~ .toggle .unchecked {
+    opacity: 0.3;
+  }
+  [type='checkbox']:checked ~ .toggle .checked {
+    opacity: 1;
+    color: var(--theme-color);
+  }
+}

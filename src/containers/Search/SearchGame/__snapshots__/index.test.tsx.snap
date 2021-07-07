@@ -1,0 +1,257 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic functionality searches games, shows the dropdown and hides it on outside click 1`] = `
+<DocumentFragment>
+  <div>
+    <form
+      aria-label="search-form"
+      class="form-inline"
+    >
+      <div
+        class="position-relative d-block w-100"
+      >
+        <input
+          aria-label="search-games"
+          class="form-control"
+          inputmode="text"
+          placeholder="Search Game"
+          value="game"
+        />
+      </div>
+    </form>
+    <div
+      aria-label="search-dropdown"
+      class="search-game-dropdown"
+    >
+      <div
+        aria-label="game-list-item"
+        class="d-flex game-list-item"
+      >
+        <div
+          class="p-2 game-cover"
+        >
+          <img
+            alt="Xenoblade Chronicles X"
+            id="Xenoblade Chronicles X-cover"
+            src="https://cdn.g1.gg/128/games/xenoblade_chronicles_x.jpg"
+          />
+        </div>
+        <div
+          class="p-2 flex-grow-1 game-name text-wrap text-secondary"
+        >
+          Xenoblade Chronicles X
+        </div>
+      </div>
+      <div
+        aria-label="game-list-item"
+        class="d-flex game-list-item"
+      >
+        <div
+          class="p-2 game-cover"
+        >
+          <img
+            alt="Pokémon X/Y"
+            id="Pokémon X/Y-cover"
+            src="https://cdn.g1.gg/128/games/placeholder.jpg"
+          />
+        </div>
+        <div
+          class="p-2 flex-grow-1 game-name text-wrap text-secondary"
+        >
+          Pokémon X/Y
+        </div>
+      </div>
+      <div
+        aria-label="game-list-item"
+        class="d-flex game-list-item"
+      >
+        <div
+          class="p-2 game-cover"
+        >
+          <img
+            alt="Final Fantasy X"
+            id="Final Fantasy X-cover"
+            src="https://cdn.g1.gg/128/games/final_fantasy_x.jpg"
+          />
+        </div>
+        <div
+          class="p-2 flex-grow-1 game-name text-wrap text-secondary"
+        >
+          Final Fantasy X
+        </div>
+      </div>
+    </div>
+    <div
+      aria-label="selected-games-list"
+      class="d-flex flex-wrap"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`option: clearInput clears the input after the item is clicked 1`] = `
+<DocumentFragment>
+  <div>
+    <form
+      aria-label="search-form"
+      class="form-inline"
+    >
+      <div
+        class="position-relative d-block w-100"
+      >
+        <input
+          aria-label="search-games"
+          class="form-control"
+          inputmode="text"
+          placeholder="Search Game"
+          value=""
+        />
+      </div>
+    </form>
+    <div
+      aria-label="selected-games-list"
+      class="d-flex flex-wrap"
+    >
+      <div
+        aria-label="game-list-item"
+        class="d-flex game-list-item chosen"
+      >
+        <div
+          class="p-2 game-cover"
+        >
+          <img
+            alt="Xenoblade Chronicles X"
+            id="Xenoblade Chronicles X-cover"
+            src="https://cdn.g1.gg/128/games/xenoblade_chronicles_x.jpg"
+          />
+        </div>
+        <div
+          class="p-2 flex-grow-1 game-name text-wrap text-secondary"
+        >
+          Xenoblade Chronicles X
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`option: initLoad should fetch data and show the dropdown initially 1`] = `
+<DocumentFragment>
+  <div>
+    <form
+      aria-label="search-form"
+      class="form-inline"
+    >
+      <div
+        class="position-relative d-block w-100"
+      >
+        <input
+          aria-label="search-games"
+          class="form-control"
+          inputmode="text"
+          placeholder="Search Game"
+          value=""
+        />
+      </div>
+    </form>
+    <div
+      aria-label="search-dropdown"
+      class="search-game-dropdown"
+    >
+      <div
+        aria-label="game-list-item"
+        class="d-flex game-list-item"
+      >
+        <div
+          class="p-2 game-cover"
+        >
+          <img
+            alt="Xenoblade Chronicles X"
+            id="Xenoblade Chronicles X-cover"
+            src="https://cdn.g1.gg/128/games/xenoblade_chronicles_x.jpg"
+          />
+        </div>
+        <div
+          class="p-2 flex-grow-1 game-name text-wrap text-secondary"
+        >
+          Xenoblade Chronicles X
+        </div>
+      </div>
+      <div
+        aria-label="game-list-item"
+        class="d-flex game-list-item"
+      >
+        <div
+          class="p-2 game-cover"
+        >
+          <img
+            alt="Pokémon X/Y"
+            id="Pokémon X/Y-cover"
+            src="https://cdn.g1.gg/128/games/placeholder.jpg"
+          />
+        </div>
+        <div
+          class="p-2 flex-grow-1 game-name text-wrap text-secondary"
+        >
+          Pokémon X/Y
+        </div>
+      </div>
+      <div
+        aria-label="game-list-item"
+        class="d-flex game-list-item"
+      >
+        <div
+          class="p-2 game-cover"
+        >
+          <img
+            alt="Final Fantasy X"
+            id="Final Fantasy X-cover"
+            src="https://cdn.g1.gg/128/games/final_fantasy_x.jpg"
+          />
+        </div>
+        <div
+          class="p-2 flex-grow-1 game-name text-wrap text-secondary"
+        >
+          Final Fantasy X
+        </div>
+      </div>
+    </div>
+    <div
+      aria-label="selected-games-list"
+      class="d-flex flex-wrap"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`option: initLoad should not fetch data and not show the dropdown on load 1`] = `
+<DocumentFragment>
+  <div>
+    <form
+      aria-label="search-form"
+      class="form-inline"
+    >
+      <div
+        class="position-relative d-block w-100"
+      >
+        <input
+          aria-label="search-games"
+          class="form-control"
+          inputmode="text"
+          placeholder="Search Game"
+          value=""
+        />
+      </div>
+    </form>
+    <div
+      aria-label="search-dropdown"
+      class="search-game-dropdown"
+    />
+    <div
+      aria-label="selected-games-list"
+      class="d-flex flex-wrap"
+    />
+  </div>
+</DocumentFragment>
+`;

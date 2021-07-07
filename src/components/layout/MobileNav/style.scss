@@ -1,0 +1,82 @@
+@import '../../../styles/varsandmixins';
+
+.mobile-nav {
+  $spacing: 1rem;
+  position: fixed;
+  bottom: $spacing;
+  left: $spacing;
+  z-index: 6;
+  display: block;
+  width: calc(100% - #{2 * $spacing});
+  max-width: calc(100vw - #{2 * $spacing});
+  background: var(--bg-color);
+  border-radius: 1.25rem;
+  box-shadow: 0.25rem 0.25rem 1.25rem rgba(var(--text-color-rgb), 0.1);
+
+  @include darkMode {
+    box-shadow: 0.25rem 0.25rem 1.25rem rgba(#000, 0.3);
+  }
+
+  @include tabletAndUp {
+    display: none;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: -#{$spacing};
+    left: -#{$spacing};
+    width: calc(100% + #{2 * $spacing});
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(var(--bg-color-rgb), 0),
+      rgba(var(--bg-color-rgb), 0.75)
+    );
+  }
+
+  .menu {
+    position: relative;
+    z-index: 2;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0.5rem;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0.5rem 0.25rem 1rem;
+    }
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: -0.5rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.5rem;
+
+      &.is-active {
+        background: var(--bg-color-lighter);
+
+        label {
+          opacity: 0.7;
+        }
+      }
+    }
+    label {
+      display: block;
+      margin: 0.25rem -0.5rem 0;
+      font-size: 0.75rem;
+      opacity: 0.4;
+      text-align: center;
+    }
+    .dropdown li {
+      align-items: flex-start;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import '../../../../styles/varsandmixins';
+
+// Custom Styles for RGL
+.tab-nav {
+  width: 100%;
+  align-self: flex-end;
+}
+// End
+
+.tab-nav {
+  position: relative;
+  list-style: none;
+  display: flex;
+  padding: 0.75rem;
+  border-radius: 1.5rem;
+  background: $greylight;
+  font-size: 1.125rem;
+  overflow: hidden;
+  max-width: 100%;
+  @include insetSmall;
+
+  @include tabletAndUp {
+    overflow-x: auto;
+  }
+  @include darkMode {
+    background: $base-dark;
+  }
+
+  li {
+    flex: 1;
+  }
+
+  li span {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.875rem;
+    text-align: center;
+    opacity: 0.7;
+    cursor: pointer;
+
+    &:hover:not(.is-active) {
+      background: rgba($black, 0.05);
+      opacity: 1;
+    }
+
+    &.is-active {
+      background: var(--bg-color);
+      @include shadowSmall;
+      opacity: 1;
+    }
+  }
+  li + li span {
+    margin-left: 0.75rem;
+  }
+}

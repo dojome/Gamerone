@@ -1,0 +1,18 @@
+@import '../../../../Achievements/style.scss';
+
+.list-item__content {
+  &.achievement-title {
+    &--post h4 {
+      color: $achievement-action-post-color;
+      opacity: 1;
+    }
+    &--follower h4 {
+      color: $achievement-action-follower-color;
+      opacity: 1;
+    }
+    &--gear h4 {
+      color: $achievement-action-gear-color;
+      opacity: 1;
+    }
+  }
+}

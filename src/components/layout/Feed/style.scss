@@ -1,0 +1,81 @@
+@import '../../../styles/varsandmixins';
+
+// custom
+.feed {
+  .card-wrapper {
+    margin: 3rem auto;
+  }
+}
+
+// mock-ui
+.feed {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 1rem;
+
+  @include tabletAndUp {
+    padding: 0 1.25rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include wideDesktopAndUp {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  &__side--left {
+    position: relative;
+    display: none;
+
+    @include tabletAndUp {
+      display: block;
+    }
+
+    @include wideDesktopAndUp {
+      grid-column: 1;
+    }
+  }
+  &__side--right {
+    position: relative;
+
+    @include wideDesktopAndUp {
+      grid-column: 5;
+    }
+  }
+
+  &__main {
+    @include tabletAndUp {
+      grid-column: 1 / span 3;
+    }
+    @include wideDesktopAndUp {
+      grid-column: 2 / span 3;
+      padding: 0 2.5rem;
+    }
+  }
+
+  .sticky {
+    position: sticky;
+    top: 9rem;
+  }
+}
+
+// Slightly hacky but functional way of targeting first card in feed and removing white glow shadow, but applying it to all following cards in feed
+// Based on https://stackoverflow.com/questions/5287272/css-select-first-element-with-a-certain-class/5293095#5293095
+.is-loaded .feed__main .card--post:not(.card--flat) {
+  box-shadow: 0.5rem 0.5rem 1rem rgba(var(--dark-color-saturated-rgb), 0.1);
+
+  @include darkMode {
+    box-shadow: 0.5rem 0.5rem 1rem rgba($black, 0.3);
+  }
+
+  & ~ .card--post:not(.card--flat),
+  & ~ * .card--post:not(.card--flat) {
+    box-shadow: -0.5rem -0.5rem 1rem var(--bg-color-lightest),
+      0.5rem 0.5rem 1rem rgba(var(--dark-color-saturated-rgb), 0.1);
+
+    @include darkMode {
+      box-shadow: -0.5rem -0.5rem 1rem rgba(var(--bg-color-lightest-rgb), 0.3),
+        0.5rem 0.5rem 1rem rgba($black, 0.3);
+    }
+  }
+}

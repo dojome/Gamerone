@@ -1,0 +1,25 @@
+# This file is a sample of .editorconfig file. Just copy and paste this file as .editorconfig in root of the project and edit content of .editorconfig file as you wish. More info: editorconfig.org
+# If your editor doesn't recognize .editorconfig file, then you should change your editor.
+# If indentation of any file has changed accidentally or automatically, don't worry. Just reformat that file using this editorconfig file content.
+
+# editorconfig.org
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+[{*.json,.*,*.html,*.svg}]
+indent_size = 2
+
+[{Makefile,**.mk}]
+# Use tabs for indentation (Makefiles require tabs)
+indent_style = tab
+root = true

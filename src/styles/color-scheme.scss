@@ -1,0 +1,298 @@
+// Colour themes
+
+// Default theme
+body {
+  --bg-color: #{$theme-light-bg};
+  --bg-color-rgb: #{rgbify($theme-light-bg)};
+  --bg-color-light: #{lighten($theme-light-bg, 2%)};
+  --bg-color-lighter: #{desaturate(lighten($theme-light-bg, 7%), 0%)};
+  --bg-color-lightest: #{desaturate(lighten($theme-light-bg, 12%), 0%)};
+  --bg-color-lightest-rgb: #{rgbify(
+      desaturate(lighten($theme-light-bg, 12%), 0%)
+    )};
+  --bg-color-dark: #{darken($theme-light-bg, 3%)};
+  --bg-color-dark-rgb: #{rgbify(darken($theme-light-bg, 2%))};
+  --bg-color-darker: #{desaturate(darken($theme-light-bg, 6%), 2%)};
+  --bg-color-darker-rgb: #{rgbify(desaturate(darken($theme-light-bg, 6%), 2%))};
+  --bg-color-darkest: #{desaturate(darken($theme-light-bg, 7.5%), 1%)};
+  --bg-color-darkest-rgb: #{rgbify(
+      desaturate(darken($theme-light-bg, 7.5%), 1%)
+    )};
+  --text-color: #{$theme-bg};
+  --text-color-rgb: #{rgbify($theme-bg)};
+  --dark-color-saturated: #{saturate(darken($theme-bg, 5%), 100%)};
+  --dark-color-saturated-rgb: #{rgbify(saturate(darken($theme-bg, 5%), 100%))};
+
+  --theme-color: #{$theme};
+  --theme-color-rgb: #{rgbify($theme)}; // for using var + transparency (rgba)
+  --theme-color-dark: #{desaturate(darken($theme, 5%), 10%)};
+  --theme-color-darker: #{desaturate(darken($theme, 10%), 10%)};
+  --theme-color-darkest: #{desaturate(darken($theme, 15%), 10%)};
+  --theme-alt-color: #{$theme-light};
+  --theme-alt-color-rgb: #{rgbify($theme-light)}; // for using var + transparency (rgba)
+  --theme-alt-color-dark: #{desaturate(darken($theme-light, 5%), 10%)};
+  --theme-alt-color-darker: #{desaturate(darken($theme-light, 10%), 10%)};
+
+  @include darkMode {
+    --bg-color: #{$theme-bg};
+    --bg-color-rgb: #{rgbify($theme-bg)};
+    --bg-color-light: #{lighten($theme-bg, 2%)};
+    --bg-color-lighter: #{desaturate(lighten($theme-bg, 7%), 0%)};
+    --bg-color-lightest: #{desaturate(lighten($theme-bg, 12%), 0%)};
+    --bg-color-lightest-rgb: #{rgbify(desaturate(lighten($theme-bg, 12%), 0%))};
+    --bg-color-dark: #{darken($theme-bg, 2%)};
+    --bg-color-dark-rgb: #{rgbify(darken($theme-bg, 2%))};
+    --bg-color-darker: #{desaturate(darken($theme-bg, 4%), 2%)};
+    --bg-color-darker-rgb: #{rgbify(desaturate(darken($theme-bg, 4%), 2%))};
+    --bg-color-darkest: #{desaturate(darken($theme-bg, 7.5%), 1%)};
+    --bg-color-darkest-rgb: #{rgbify(desaturate(darken($theme-bg, 7.5%), 1%))};
+    --text-color: #{$white-soft};
+    --text-color-rgb: #{rgbify($white-soft)};
+
+    --theme-color: #{$theme-light};
+    --theme-color-rgb: #{rgbify($theme-light)}; // for using var + transparency (rgba)
+    --theme-color-dark: #{desaturate(darken($theme-light, 5%), 10%)};
+    --theme-color-darker: #{desaturate(darken($theme-light, 10%), 10%)};
+    --theme-color-darkest: #{desaturate(darken($theme-light, 15%), 10%)};
+    --theme-alt-color: #{$theme};
+    --theme-alt-color-rgb: #{rgbify($theme)}; // for using var + transparency (rgba)
+    --theme-alt-color-dark: #{desaturate(darken($theme, 5%), 10%)};
+    --theme-alt-color-darker: #{desaturate(darken($theme, 10%), 10%)};
+  }
+}
+
+// Theme 2
+body.theme--2 {
+  --bg-color: #{$theme-2-light-bg};
+  --bg-color-rgb: #{rgbify($theme-2-light-bg)};
+  --bg-color-light: #{lighten($theme-2-light-bg, 2%)};
+  --bg-color-lighter: #{desaturate(lighten($theme-2-light-bg, 7%), 0%)};
+  --bg-color-lightest: #{desaturate(lighten($theme-2-light-bg, 12%), 0%)};
+  --bg-color-lightest-rgb: #{rgbify(
+      desaturate(lighten($theme-2-light-bg, 12%), 0%)
+    )};
+  --bg-color-dark: #{darken($theme-2-light-bg, 3%)};
+  --bg-color-dark-rgb: #{rgbify(darken($theme-2-light-bg, 2%))};
+  --bg-color-darker: #{desaturate(darken($theme-2-light-bg, 6%), 2%)};
+  --bg-color-darker-rgb: #{rgbify(desaturate(darken($theme-2-light-bg, 6%), 2%))};
+  --bg-color-darkest: #{desaturate(darken($theme-2-light-bg, 7.5%), 1%)};
+  --bg-color-darkest-rgb: #{rgbify(
+      desaturate(darken($theme-2-light-bg, 7.5%), 1%)
+    )};
+  --text-color: #{$theme-2-bg};
+  --text-color-rgb: #{rgbify($theme-2-bg)};
+
+  --theme-color: #{$theme-2};
+  --theme-color-rgb: #{rgbify($theme-2)}; // for using var + transparency (rgba)
+  --theme-color-dark: #{desaturate(darken($theme-2, 5%), 10%)};
+  --theme-color-darker: #{desaturate(darken($theme-2, 10%), 10%)};
+  --theme-color-darkest: #{desaturate(darken($theme-2, 15%), 10%)};
+  --theme-alt-color: #{$theme-2-light};
+  --theme-alt-color-rgb: #{rgbify($theme-2-light)}; // for using var + transparency (rgba)
+  --theme-alt-color-dark: #{desaturate(darken($theme-2-light, 5%), 10%)};
+  --theme-alt-color-darker: #{desaturate(darken($theme-2-light, 10%), 10%)};
+
+  @include darkMode {
+    --bg-color: #{$theme-2-bg};
+    --bg-color-rgb: #{rgbify($theme-2-bg)};
+    --bg-color-light: #{lighten($theme-2-bg, 2%)};
+    --bg-color-lighter: #{desaturate(lighten($theme-2-bg, 7%), 0%)};
+    --bg-color-lightest: #{desaturate(lighten($theme-2-bg, 12%), 0%)};
+    --bg-color-lightest-rgb: #{rgbify(desaturate(lighten($theme-2-bg, 12%), 0%))};
+    --bg-color-dark: #{darken($theme-2-bg, 2%)};
+    --bg-color-dark-rgb: #{rgbify(darken($theme-2-bg, 2%))};
+    --bg-color-darker: #{desaturate(darken($theme-2-bg, 4%), 2%)};
+    --bg-color-darker-rgb: #{rgbify(desaturate(darken($theme-2-bg, 4%), 2%))};
+    --bg-color-darkest: #{desaturate(darken($theme-2-bg, 7.5%), 1%)};
+    --bg-color-darkest-rgb: #{rgbify(desaturate(darken($theme-2-bg, 7.5%), 1%))};
+    --text-color: #{$white-soft};
+    --text-color-rgb: #{rgbify($white-soft)};
+
+    --theme-color: #{$theme-2-light};
+    --theme-color-rgb: #{rgbify($theme-2-light)}; // for using var + transparency (rgba)
+    --theme-color-dark: #{desaturate(darken($theme-2-light, 5%), 10%)};
+    --theme-color-darker: #{desaturate(darken($theme-2-light, 10%), 10%)};
+    --theme-color-darkest: #{desaturate(darken($theme-2-light, 15%), 10%)};
+    --theme-alt-color: #{$theme-2};
+    --theme-alt-color-rgb: #{rgbify($theme-2)}; // for using var + transparency (rgba)
+    --theme-alt-color-dark: #{desaturate(darken($theme-2, 5%), 10%)};
+    --theme-alt-color-darker: #{desaturate(darken($theme-2, 10%), 10%)};
+  }
+}
+
+// Theme 3
+body.theme--3 {
+  --bg-color: #{$theme-3-light-bg};
+  --bg-color-rgb: #{rgbify($theme-3-light-bg)};
+  --bg-color-light: #{lighten($theme-3-light-bg, 2%)};
+  --bg-color-lighter: #{desaturate(lighten($theme-3-light-bg, 7%), 0%)};
+  --bg-color-lightest: #{desaturate(lighten($theme-3-light-bg, 12%), 0%)};
+  --bg-color-lightest-rgb: #{rgbify(
+      desaturate(lighten($theme-3-light-bg, 12%), 0%)
+    )};
+  --bg-color-dark: #{darken($theme-3-light-bg, 3%)};
+  --bg-color-dark-rgb: #{rgbify(darken($theme-3-light-bg, 2%))};
+  --bg-color-darker: #{desaturate(darken($theme-3-light-bg, 6%), 2%)};
+  --bg-color-darker-rgb: #{rgbify(desaturate(darken($theme-3-light-bg, 6%), 2%))};
+  --bg-color-darkest: #{desaturate(darken($theme-3-light-bg, 7.5%), 1%)};
+  --bg-color-darkest-rgb: #{rgbify(
+      desaturate(darken($theme-3-light-bg, 7.5%), 1%)
+    )};
+  --text-color: #{$theme-3-bg};
+  --text-color-rgb: #{rgbify($theme-3-bg)};
+
+  --theme-color: #{$theme-3};
+  --theme-color-rgb: #{rgbify($theme-3)}; // for using var + transparency (rgba)
+  --theme-color-dark: #{desaturate(darken($theme-3, 5%), 10%)};
+  --theme-color-darker: #{desaturate(darken($theme-3, 10%), 10%)};
+  --theme-color-darkest: #{desaturate(darken($theme-3, 15%), 10%)};
+  --theme-alt-color: #{$theme-3-light};
+  --theme-alt-color-rgb: #{rgbify($theme-3-light)}; // for using var + transparency (rgba)
+  --theme-alt-color-dark: #{desaturate(darken($theme-3-light, 5%), 10%)};
+  --theme-alt-color-darker: #{desaturate(darken($theme-3-light, 10%), 10%)};
+
+  @include darkMode {
+    --bg-color: #{$theme-3-bg};
+    --bg-color-rgb: #{rgbify($theme-3-bg)};
+    --bg-color-light: #{lighten($theme-3-bg, 2%)};
+    --bg-color-lighter: #{desaturate(lighten($theme-3-bg, 7%), 0%)};
+    --bg-color-lightest: #{desaturate(lighten($theme-3-bg, 12%), 0%)};
+    --bg-color-lightest-rgb: #{rgbify(desaturate(lighten($theme-3-bg, 12%), 0%))};
+    --bg-color-dark: #{darken($theme-3-bg, 2%)};
+    --bg-color-dark-rgb: #{rgbify(darken($theme-3-bg, 2%))};
+    --bg-color-darker: #{desaturate(darken($theme-3-bg, 4%), 2%)};
+    --bg-color-darker-rgb: #{rgbify(desaturate(darken($theme-3-bg, 4%), 2%))};
+    --bg-color-darkest: #{desaturate(darken($theme-3-bg, 7.5%), 1%)};
+    --bg-color-darkest-rgb: #{rgbify(desaturate(darken($theme-3-bg, 7.5%), 1%))};
+    --text-color: #{$white-soft};
+    --text-color-rgb: #{rgbify($white-soft)};
+
+    --theme-color: #{$theme-3-light};
+    --theme-color-rgb: #{rgbify($theme-3-light)}; // for using var + transparency (rgba)
+    --theme-color-dark: #{desaturate(darken($theme-3-light, 5%), 10%)};
+    --theme-color-darker: #{desaturate(darken($theme-3-light, 10%), 10%)};
+    --theme-color-darkest: #{desaturate(darken($theme-3-light, 15%), 10%)};
+    --theme-alt-color: #{$theme-3};
+    --theme-alt-color-rgb: #{rgbify($theme-3)}; // for using var + transparency (rgba)
+    --theme-alt-color-dark: #{desaturate(darken($theme-3, 5%), 10%)};
+    --theme-alt-color-darker: #{desaturate(darken($theme-3, 10%), 10%)};
+  }
+}
+
+// Theme 4
+body.theme--4 {
+  --bg-color: #{$theme-4-light-bg};
+  --bg-color-rgb: #{rgbify($theme-4-light-bg)};
+  --bg-color-light: #{lighten($theme-4-light-bg, 2%)};
+  --bg-color-lighter: #{desaturate(lighten($theme-4-light-bg, 7%), 0%)};
+  --bg-color-lightest: #{desaturate(lighten($theme-4-light-bg, 12%), 0%)};
+  --bg-color-lightest-rgb: #{rgbify(
+      desaturate(lighten($theme-4-light-bg, 12%), 0%)
+    )};
+  --bg-color-dark: #{darken($theme-4-light-bg, 3%)};
+  --bg-color-dark-rgb: #{rgbify(darken($theme-4-light-bg, 2%))};
+  --bg-color-darker: #{desaturate(darken($theme-4-light-bg, 6%), 2%)};
+  --bg-color-darker-rgb: #{rgbify(desaturate(darken($theme-4-light-bg, 6%), 2%))};
+  --bg-color-darkest: #{desaturate(darken($theme-4-light-bg, 7.5%), 1%)};
+  --bg-color-darkest-rgb: #{rgbify(
+      desaturate(darken($theme-4-light-bg, 7.5%), 1%)
+    )};
+  --text-color: #{$theme-4-bg};
+  --text-color-rgb: #{rgbify($theme-4-bg)};
+
+  --theme-color: #{$theme-4};
+  --theme-color-rgb: #{rgbify($theme-4)}; // for using var + transparency (rgba)
+  --theme-color-dark: #{desaturate(darken($theme-4, 5%), 10%)};
+  --theme-color-darker: #{desaturate(darken($theme-4, 10%), 10%)};
+  --theme-color-darkest: #{desaturate(darken($theme-4, 15%), 10%)};
+  --theme-alt-color: #{$theme-4-light};
+  --theme-alt-color-rgb: #{rgbify($theme-4-light)}; // for using var + transparency (rgba)
+  --theme-alt-color-dark: #{desaturate(darken($theme-4-light, 5%), 10%)};
+  --theme-alt-color-darker: #{desaturate(darken($theme-4-light, 10%), 10%)};
+
+  @include darkMode {
+    --bg-color: #{$theme-4-bg};
+    --bg-color-rgb: #{rgbify($theme-4-bg)};
+    --bg-color-light: #{lighten($theme-4-bg, 2%)};
+    --bg-color-lighter: #{desaturate(lighten($theme-4-bg, 7%), 0%)};
+    --bg-color-lightest: #{desaturate(lighten($theme-4-bg, 12%), 0%)};
+    --bg-color-lightest-rgb: #{rgbify(desaturate(lighten($theme-4-bg, 12%), 0%))};
+    --bg-color-dark: #{darken($theme-4-bg, 2%)};
+    --bg-color-dark-rgb: #{rgbify(darken($theme-4-bg, 2%))};
+    --bg-color-darker: #{desaturate(darken($theme-4-bg, 4%), 2%)};
+    --bg-color-darker-rgb: #{rgbify(desaturate(darken($theme-4-bg, 4%), 2%))};
+    --bg-color-darkest: #{desaturate(darken($theme-4-bg, 7.5%), 1%)};
+    --bg-color-darkest-rgb: #{rgbify(desaturate(darken($theme-4-bg, 7.5%), 1%))};
+    --text-color: #{$white-soft};
+    --text-color-rgb: #{rgbify($white-soft)};
+
+    --theme-color: #{$theme-4-light};
+    --theme-color-rgb: #{rgbify($theme-4-light)}; // for using var + transparency (rgba)
+    --theme-color-dark: #{desaturate(darken($theme-4-light, 5%), 10%)};
+    --theme-color-darker: #{desaturate(darken($theme-4-light, 10%), 10%)};
+    --theme-color-darkest: #{desaturate(darken($theme-4-light, 15%), 10%)};
+    --theme-alt-color: #{$theme-4};
+    --theme-alt-color-rgb: #{rgbify($theme-4)}; // for using var + transparency (rgba)
+    --theme-alt-color-dark: #{desaturate(darken($theme-4, 5%), 10%)};
+    --theme-alt-color-darker: #{desaturate(darken($theme-4, 10%), 10%)};
+  }
+}
+
+// Theme 5
+body.theme--5 {
+  --bg-color: #{$theme-5-light-bg};
+  --bg-color-rgb: #{rgbify($theme-5-light-bg)};
+  --bg-color-light: #{lighten($theme-5-light-bg, 2%)};
+  --bg-color-lighter: #{desaturate(lighten($theme-5-light-bg, 7%), 0%)};
+  --bg-color-lightest: #{desaturate(lighten($theme-5-light-bg, 12%), 0%)};
+  --bg-color-lightest-rgb: #{rgbify(
+      desaturate(lighten($theme-5-light-bg, 12%), 0%)
+    )};
+  --bg-color-dark: #{darken($theme-5-light-bg, 3%)};
+  --bg-color-dark-rgb: #{rgbify(darken($theme-5-light-bg, 2%))};
+  --bg-color-darker: #{desaturate(darken($theme-5-light-bg, 6%), 2%)};
+  --bg-color-darker-rgb: #{rgbify(desaturate(darken($theme-5-light-bg, 6%), 2%))};
+  --bg-color-darkest: #{desaturate(darken($theme-5-light-bg, 7.5%), 1%)};
+  --bg-color-darkest-rgb: #{rgbify(
+      desaturate(darken($theme-5-light-bg, 7.5%), 1%)
+    )};
+  --text-color: #{$theme-5-bg};
+  --text-color-rgb: #{rgbify($theme-5-bg)};
+
+  --theme-color: #{$theme-5};
+  --theme-color-rgb: #{rgbify($theme-5)}; // for using var + transparency (rgba)
+  --theme-color-dark: #{desaturate(darken($theme-5, 5%), 10%)};
+  --theme-color-darker: #{desaturate(darken($theme-5, 10%), 10%)};
+  --theme-color-darkest: #{desaturate(darken($theme-5, 15%), 10%)};
+  --theme-alt-color: #{$theme-5-light};
+  --theme-alt-color-rgb: #{rgbify($theme-5-light)}; // for using var + transparency (rgba)
+  --theme-alt-color-dark: #{desaturate(darken($theme-5-light, 5%), 10%)};
+  --theme-alt-color-darker: #{desaturate(darken($theme-5-light, 10%), 10%)};
+
+  @include darkMode {
+    --bg-color: #{$theme-5-bg};
+    --bg-color-rgb: #{rgbify($theme-5-bg)};
+    --bg-color-light: #{lighten($theme-5-bg, 2%)};
+    --bg-color-lighter: #{desaturate(lighten($theme-5-bg, 7%), 0%)};
+    --bg-color-lightest: #{desaturate(lighten($theme-5-bg, 12%), 0%)};
+    --bg-color-lightest-rgb: #{rgbify(desaturate(lighten($theme-5-bg, 12%), 0%))};
+    --bg-color-dark: #{darken($theme-5-bg, 2%)};
+    --bg-color-dark-rgb: #{rgbify(darken($theme-5-bg, 2%))};
+    --bg-color-darker: #{desaturate(darken($theme-5-bg, 4%), 2%)};
+    --bg-color-darker-rgb: #{rgbify(desaturate(darken($theme-5-bg, 4%), 2%))};
+    --bg-color-darkest: #{desaturate(darken($theme-5-bg, 7.5%), 1%)};
+    --bg-color-darkest-rgb: #{rgbify(desaturate(darken($theme-5-bg, 7.5%), 1%))};
+    --text-color: #{$white-soft};
+    --text-color-rgb: #{rgbify($white-soft)};
+
+    --theme-color: #{$theme-5-light};
+    --theme-color-rgb: #{rgbify($theme-5-light)}; // for using var + transparency (rgba)
+    --theme-color-dark: #{desaturate(darken($theme-5-light, 5%), 10%)};
+    --theme-color-darker: #{desaturate(darken($theme-5-light, 10%), 10%)};
+    --theme-color-darkest: #{desaturate(darken($theme-5-light, 15%), 10%)};
+    --theme-alt-color: #{$theme-5};
+    --theme-alt-color-rgb: #{rgbify($theme-5)}; // for using var + transparency (rgba)
+    --theme-alt-color-dark: #{desaturate(darken($theme-5, 5%), 10%)};
+    --theme-alt-color-darker: #{desaturate(darken($theme-5, 10%), 10%)};
+  }
+}

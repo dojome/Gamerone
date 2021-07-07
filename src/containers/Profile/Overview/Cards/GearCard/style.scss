@@ -1,0 +1,12 @@
+// custom
+.card {
+  &--gear {
+    .card__content {
+      display: flex;
+      flex: 1;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: -1rem;
+    }
+  }
+}

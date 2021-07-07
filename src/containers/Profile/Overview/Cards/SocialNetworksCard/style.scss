@@ -1,0 +1,26 @@
+// custom
+.card {
+  &--social {
+    .card__content {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin-top: -1rem;
+      justify-content: center;
+
+      a {
+        &:nth-child(1) {
+          margin-right: 1rem;
+          margin-bottom: 0.75rem;
+        }
+        &:nth-child(2) {
+        }
+        &:nth-child(3) {
+          margin-right: 1rem;
+        }
+        &:nth-child(4) {
+        }
+      }
+    }
+  }
+}

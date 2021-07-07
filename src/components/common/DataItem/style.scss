@@ -1,0 +1,75 @@
+@import '../../../styles/varsandmixins';
+
+// custom
+
+.data-item {
+  &--link {
+    &.is-active {
+      background: var(--bg-color-dark);
+      border-radius: 1rem;
+
+      @include darkMode {
+        background: rgba($white, 0.05);
+      }
+    }
+    &:hover {
+      .data-item__label {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// mock-ui
+.data-item {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+
+  &:not(.data-item--link) {
+    cursor: default;
+  }
+
+  &--tiny,
+  &--small {
+    margin: 0.25rem 0;
+  }
+
+  .badge {
+    background: var(--bg-color-darker);
+
+    @include darkMode {
+      background: rgba($white, 0.05);
+    }
+  }
+
+  &__label {
+    margin-left: 0.75rem;
+    opacity: 0.5;
+  }
+
+  &--tiny .data-item__label,
+  &--small .data-item__label {
+    margin-left: 0.25rem;
+  }
+
+  &--link {
+    &:hover {
+      .badge {
+        background: var(--bg-color-darkest);
+
+        @include darkMode {
+          background: rgba($white, 0.1);
+        }
+      }
+      .data-item__label {
+        opacity: 0.8;
+      }
+    }
+    &:active {
+      .data-item__label {
+        opacity: 1;
+      }
+    }
+  }
+}

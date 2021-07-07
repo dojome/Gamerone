@@ -1,0 +1,126 @@
+@import '../../../styles/varsandmixins';
+
+.dropdown-wrapper {
+  position: relative;
+
+  &__children {
+    cursor: pointer;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  top: -0.25rem;
+  right: -0.25rem;
+  z-index: 2;
+  max-width: calc(100% - 3rem);
+  max-height: 100%;
+  overflow: hidden;
+  background: var(--bg-color-dark);
+  box-shadow: 0.5rem 0.5rem 1rem rgba(var(--text-color-rgb), 0.1);
+
+  @include darkMode {
+    box-shadow: 0.5rem 0.5rem 1rem rgba($black, 0.25);
+  }
+
+  border-radius: 1.25rem;
+  transform: translate(-0.5rem, 0.5rem);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+
+  @include tabletAndDown {
+    position: fixed;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100vw;
+
+    transform: translate(0, 2rem);
+  }
+
+  &__header {
+    margin-right: 3.5rem;
+    margin-bottom: 0.25rem;
+    padding: 1rem;
+
+    h4 {
+      font-weight: normal;
+      opacity: 0.3;
+    }
+  }
+
+  &__content {
+    padding: 0 1rem 0.5rem;
+  }
+
+  .close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    transform: translate(0.5rem, -0.5rem);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
+  }
+
+  .wide &.is-open {
+    width: 100vw;
+    max-width: 24rem;
+  }
+
+  &.is-open {
+    transform: translate(0, 0);
+    max-width: 12rem;
+    max-height: 20rem;
+    opacity: 1;
+    pointer-events: all;
+
+    .close {
+      transform: translate(0, 0);
+    }
+
+    @include tabletAndDown {
+      max-width: 100vw;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.5rem;
+    overflow: hidden;
+  }
+
+  ul li {
+    a,
+    div {
+      display: block;
+      width: calc(100% - 1rem);
+      margin: 0 0.5rem;
+      padding: 0.75rem 1rem;
+      border-radius: 0.75rem;
+      text-decoration: none;
+      white-space: nowrap;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--bg-color-darker);
+        color: var(--theme-color);
+      }
+      &:active {
+        background-color: var(--bg-color-darkest);
+      }
+    }
+  }
+  @include tabletAndUp {
+    &--has-close ul li:first-child {
+      margin-top: 0.5rem;
+      margin-right: 3.5rem;
+    }
+  }
+}

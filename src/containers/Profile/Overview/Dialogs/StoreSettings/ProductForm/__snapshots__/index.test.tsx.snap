@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`stores list initial 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card__content"
+  >
+    <h4>
+      Store
+    </h4>
+    <div
+     
+      role="alert"
+    >
+      You have no products.
+    </div>
+  </div>
+  <div
+    className="card__actions"
+  >
+    <button
+      className="button button--primary"
+      onClick={[Function]}
+      type="submit"
+    >
+      Add
+    </button>
+  </div>
+</div>
+`;

@@ -1,0 +1,13 @@
+// custom
+.card {
+  &--squad {
+    .card__content {
+      margin-top: -1rem;
+    }
+    .squad-members {
+      a {
+        margin-right: 1.25rem;
+      }
+    }
+  }
+}

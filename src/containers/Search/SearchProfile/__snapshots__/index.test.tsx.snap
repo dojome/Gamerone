@@ -1,0 +1,306 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic functionality searches profiles, shows the dropdown and hides it on outside click 1`] = `
+<DocumentFragment>
+  <div>
+    <form
+      aria-label="search-form"
+      class="form-inline"
+    >
+      <div
+        class="position-relative d-block w-100"
+      >
+        <input
+          aria-label="search-profiles"
+          class="form-control w-100 debounced-input"
+          inputmode="text"
+          placeholder="Search Profile"
+          value="profile"
+        />
+      </div>
+    </form>
+    <div
+      aria-label="search-dropdown"
+      class="search-profile-dropdown"
+    >
+      <div
+        aria-label="profile-list-item"
+        class="d-flex profile-list-item"
+      >
+        <div
+          class="p-2 profile-avatar"
+        >
+          <img
+            alt="pokimane"
+            class="avatar lg border border-body border-width-2"
+            id="avatar"
+            src="https://cdn.g1.gg/128/assets/placeholder/avatar.svg"
+          />
+        </div>
+        <div
+          class="p-2 flex-grow-1 profile-name text-wrap text-secondary"
+        >
+          <h6>
+            Pokimane User
+          </h6>
+          <span>
+            @pokimane
+          </span>
+        </div>
+      </div>
+      <div
+        aria-label="profile-list-item"
+        class="d-flex profile-list-item"
+      >
+        <div
+          class="p-2 profile-avatar"
+        >
+          <img
+            alt="drlupo"
+            class="avatar lg border border-body border-width-2"
+            id="avatar"
+            src="https://cdn.g1.gg/128/assets/placeholder/avatar.svg"
+          />
+        </div>
+        <div
+          class="p-2 flex-grow-1 profile-name text-wrap text-secondary"
+        >
+          <h6>
+            Drlupo User
+          </h6>
+          <span>
+            @drlupo
+          </span>
+        </div>
+      </div>
+      <div
+        aria-label="profile-list-item"
+        class="d-flex profile-list-item"
+      >
+        <div
+          class="p-2 profile-avatar"
+        >
+          <img
+            alt="nickmercs"
+            class="avatar lg border border-body border-width-2"
+            id="avatar"
+            src="https://cdn.g1.gg/128/assets/placeholder/avatar.svg"
+          />
+        </div>
+        <div
+          class="p-2 flex-grow-1 profile-name text-wrap text-secondary"
+        >
+          <h6>
+            Nickmercs User
+          </h6>
+          <span>
+            @nickmercs
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-label="selected-profiles-list"
+      class="d-flex flex-wrap"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`option: clearInput clears the input after the item is clicked 1`] = `
+<DocumentFragment>
+  <div>
+    <form
+      aria-label="search-form"
+      class="form-inline"
+    >
+      <div
+        class="position-relative d-block w-100"
+      >
+        <input
+          aria-label="search-profiles"
+          class="form-control w-100 debounced-input"
+          inputmode="text"
+          placeholder="Search Profile"
+          value=""
+        />
+      </div>
+    </form>
+    <div
+      aria-label="selected-profiles-list"
+      class="d-flex flex-wrap"
+    >
+      <div
+        aria-label="profile-list-item"
+        class="d-flex profile-list-item col-3 chosen"
+      >
+        <div
+          class="p-2 profile-avatar"
+        >
+          <img
+            alt="pokimane"
+            class="avatar lg border border-body border-width-2"
+            id="avatar"
+            src="https://cdn.g1.gg/128/assets/placeholder/avatar.svg"
+          />
+        </div>
+        <div
+          class="p-2 flex-grow-1 profile-name text-wrap text-secondary"
+        >
+          <h6>
+            Pokimane User
+          </h6>
+          <span>
+            @pokimane
+          </span>
+        </div>
+        <span
+          class="item-remove"
+        >
+          <i
+            class="far fa-times-circle"
+          />
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`option: initLoad should fetch data and show the dropdown initially 1`] = `
+<DocumentFragment>
+  <div>
+    <form
+      aria-label="search-form"
+      class="form-inline"
+    >
+      <div
+        class="position-relative d-block w-100"
+      >
+        <input
+          aria-label="search-profiles"
+          class="form-control w-100 debounced-input"
+          inputmode="text"
+          placeholder="Search Profile"
+          value=""
+        />
+      </div>
+    </form>
+    <div
+      aria-label="search-dropdown"
+      class="search-profile-dropdown"
+    >
+      <div
+        aria-label="profile-list-item"
+        class="d-flex profile-list-item"
+      >
+        <div
+          class="p-2 profile-avatar"
+        >
+          <img
+            alt="pokimane"
+            class="avatar lg border border-body border-width-2"
+            id="avatar"
+            src="https://cdn.g1.gg/128/assets/placeholder/avatar.svg"
+          />
+        </div>
+        <div
+          class="p-2 flex-grow-1 profile-name text-wrap text-secondary"
+        >
+          <h6>
+            Pokimane User
+          </h6>
+          <span>
+            @pokimane
+          </span>
+        </div>
+      </div>
+      <div
+        aria-label="profile-list-item"
+        class="d-flex profile-list-item"
+      >
+        <div
+          class="p-2 profile-avatar"
+        >
+          <img
+            alt="drlupo"
+            class="avatar lg border border-body border-width-2"
+            id="avatar"
+            src="https://cdn.g1.gg/128/assets/placeholder/avatar.svg"
+          />
+        </div>
+        <div
+          class="p-2 flex-grow-1 profile-name text-wrap text-secondary"
+        >
+          <h6>
+            Drlupo User
+          </h6>
+          <span>
+            @drlupo
+          </span>
+        </div>
+      </div>
+      <div
+        aria-label="profile-list-item"
+        class="d-flex profile-list-item"
+      >
+        <div
+          class="p-2 profile-avatar"
+        >
+          <img
+            alt="nickmercs"
+            class="avatar lg border border-body border-width-2"
+            id="avatar"
+            src="https://cdn.g1.gg/128/assets/placeholder/avatar.svg"
+          />
+        </div>
+        <div
+          class="p-2 flex-grow-1 profile-name text-wrap text-secondary"
+        >
+          <h6>
+            Nickmercs User
+          </h6>
+          <span>
+            @nickmercs
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-label="selected-profiles-list"
+      class="d-flex flex-wrap"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`option: initLoad should not fetch data and not show the dropdown on load 1`] = `
+<DocumentFragment>
+  <div>
+    <form
+      aria-label="search-form"
+      class="form-inline"
+    >
+      <div
+        class="position-relative d-block w-100"
+      >
+        <input
+          aria-label="search-profiles"
+          class="form-control w-100 debounced-input"
+          inputmode="text"
+          placeholder="Search Profile"
+          value=""
+        />
+      </div>
+    </form>
+    <div
+      aria-label="search-dropdown"
+      class="search-profile-dropdown"
+    />
+    <div
+      aria-label="selected-profiles-list"
+      class="d-flex flex-wrap"
+    />
+  </div>
+</DocumentFragment>
+`;

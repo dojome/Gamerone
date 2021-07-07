@@ -1,0 +1,28 @@
+@import '../../../../../styles/varsandmixins';
+
+// custom
+.card {
+  &--now-playing {
+    .card__content {
+    }
+    .now-playing {
+      &-wrapper {
+        display: flex;
+        flex: 1;
+        align-items: flex-end;
+      }
+      &-details {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        padding: 1.25rem;
+        border-radius: 1.25rem;
+        background: rgba(var(--bg-color-lightest-rgb), 0.7);
+
+        @include darkMode {
+          background: rgba(var(--bg-color-darkest-rgb), 0.7);
+        }
+      }
+    }
+  }
+}

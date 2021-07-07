@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`social network list initial 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="card__content"
+  >
+    <div
+      className="social--wrapper"
+    />
+  </div>
+  <div
+    className="card__actions"
+  >
+    <button
+      className="button button--primary button--medium is-disabled"
+      disabled={true}
+      type="submit"
+    >
+      Save
+    </button>
+  </div>
+</form>
+`;

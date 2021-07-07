@@ -1,0 +1,14 @@
+@import '../../../../styles/varsandmixins';
+
+// custom
+.grid {
+  .card--achievements-full {
+    .card__content {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+}

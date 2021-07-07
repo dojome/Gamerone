@@ -1,0 +1,61 @@
+@import '../../../styles/varsandmixins';
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  margin-top: 1.5rem;
+
+  @include tabletAndUp {
+    position: fixed;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu {
+    display: none;
+    padding: 0;
+    list-style: none;
+
+    @include tabletAndUp {
+      display: flex;
+    }
+  }
+
+  &__left,
+  &__right {
+    align-items: center;
+
+    & > * + * {
+      margin-left: 1rem;
+    }
+
+    .button--subtle {
+      margin-right: 1rem;
+    }
+  }
+  &__left {
+    display: flex;
+
+    @include tabletAndDown {
+      flex: 1;
+    }
+  }
+  &__right {
+    display: none;
+
+    @include tabletAndUp {
+      display: flex;
+    }
+  }
+
+  .button--primary {
+    box-shadow: none;
+    border-color: rgba($black, 0.2);
+  }
+}

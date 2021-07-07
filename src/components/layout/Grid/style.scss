@@ -1,0 +1,223 @@
+@import '../../../styles/varsandmixins';
+
+//custom
+.grid {
+  .games-meta {
+    .card {
+      justify-content: flex-start;
+    }
+  }
+}
+
+// mock-ui
+.grid {
+  display: grid;
+  // grid-template-rows: 10rem;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  max-width: 90rem;
+  padding: 0 1rem;
+
+  @include tabletAndUp {
+    grid-template-rows: 10rem;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+  }
+
+  @include wideDesktopAndUp {
+    grid-template-columns: repeat(5, 1fr);
+    margin: 2.5rem 1.25rem;
+    column-gap: 2.5rem;
+    row-gap: 2.5rem;
+  }
+  @include monitorAndUp {
+    margin: 2.5rem auto;
+    column-gap: 2.5rem;
+    row-gap: 2.5rem;
+  }
+
+  .card {
+    position: relative;
+    grid-column: 1 / span 2;
+    justify-content: center;
+    max-width: 100%;
+    min-height: 10rem;
+    margin: 0;
+
+    @include tabletAndUp {
+      min-height: 13rem;
+    }
+  }
+
+  .card--user {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+
+  .card--user-1-row {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    min-height: 0;
+  }
+
+  .cover-spacer {
+    grid-column: auto / span 2;
+    grid-row-span: auto / span 2;
+
+    @include tabletAndUp {
+      display: inherit;
+      grid-column: 3 / span 3;
+    }
+  }
+  .card--sponsors {
+    @include tabletAndUp {
+      grid-column: auto / span 3;
+      grid-row-start: 2;
+    }
+  }
+  .card--achievements {
+    @include tabletAndUp {
+      grid-column: auto / span 3;
+    }
+    @include wideDesktopAndUp {
+      grid-column: auto / span 1;
+    }
+  }
+  .card--post {
+    grid-column: auto / span 2;
+    grid-row-span: auto / span 2;
+
+    @include wideDesktopAndUp {
+      grid-column: auto / span 2;
+      grid-row: auto / span 2;
+    }
+  }
+  .card--gear {
+    @include tabletAndUp {
+      grid-column: auto / span 3;
+    }
+    @include wideDesktopAndUp {
+      grid-column: auto / span 3;
+    }
+  }
+  .card--social {
+    @include wideDesktopAndUp {
+      grid-column: auto / span 1;
+    }
+  }
+  .card--now-playing {
+    @include tabletAndUp {
+      grid-column: auto / span 5;
+    }
+    @include wideDesktopAndUp {
+      grid-column: auto / span 2;
+    }
+  }
+  .card--history {
+    @include tabletAndUp {
+      grid-column: auto / span 4;
+    }
+    @include wideDesktopAndUp {
+      grid-column: auto / span 3;
+    }
+  }
+
+  // Achievements Tab
+  .card--banner {
+    grid-column: auto / span 1;
+    margin-bottom: 3rem;
+
+    @include tabletAndDown {
+      width: 12rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include tabletAndUp {
+      grid-column: auto / span 1;
+      grid-row-span: auto / span 3;
+    }
+  }
+  .card--achievements-full {
+    @include tabletAndUp {
+      grid-column: auto / span 3;
+      grid-row-span: auto / span 4;
+    }
+  }
+
+  // Experience Tab
+  .card--experience-summary {
+    justify-content: flex-start; // custom
+  }
+  .experience-summary {
+    @include tabletAndUp {
+      grid-column: auto / span 3;
+    }
+    @include wideDesktopAndUp {
+      grid-column: auto / span 2;
+    }
+  }
+  .card--experience {
+    justify-content: flex-start; // custom
+    @include tabletAndUp {
+      grid-column: auto / span 3;
+    }
+  }
+
+  // Games Tab
+  .games-meta {
+    grid-column: auto / span 2;
+
+    @include tabletAndUp {
+      grid-column: auto / span 4;
+    }
+    @include wideDesktopAndUp {
+      grid-column: auto / span 1;
+      grid-row: auto / span 3;
+    }
+  }
+  .card-wrapper--game {
+    grid-column: auto / span 2;
+
+    @include tabletAndUp {
+      grid-column: auto / span 2;
+    }
+    @include wideDesktopAndUp {
+      grid-column-start: 2;
+      grid-column: auto / span 2;
+    }
+  }
+
+  // Infinite scroll
+  .games-meta + .infinite-scroll-component__outerdiv {
+    grid-column: auto / span 2;
+    grid-row: auto / span 3;
+
+    @include tabletAndUp {
+      grid-column: auto / span 4;
+    }
+
+    > .infinite-scroll-component.infinite-grid {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 2.5rem;
+      row-gap: 2.5rem;
+      max-width: 90rem;
+      padding: 0 1rem;
+      // margin: 2.5rem 1.25rem;
+      // grid-template-rows: 10rem;
+
+      @include tabletAndUp {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .card-wrapper--game {
+        grid-column: auto / span 1;
+      }
+    }
+  }
+}
